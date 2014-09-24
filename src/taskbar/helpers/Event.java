@@ -1,0 +1,32 @@
+package taskbar.helpers;
+
+import java.time.LocalDateTime;
+
+public class Event extends Task {
+	private LocalDateTime startTime;
+	private LocalDateTime endTime;
+	
+	public Event(String discription, String[] labels, int importance, LocalDateTime start, 
+			LocalDateTime end) {
+		super(discription, labels, importance);
+		startTime = start;
+		endTime = end;
+	}
+
+	public LocalDateTime getStartTime() {
+		return startTime;
+	}
+
+	public void setStartTime(LocalDateTime startTime) {
+		this.startTime = startTime;
+	}
+
+	public LocalDateTime getEndTime() {
+		return endTime;
+	}
+
+	public void setEndTime(LocalDateTime endTime) {
+		this.endTime = endTime;
+	}
+
+}
