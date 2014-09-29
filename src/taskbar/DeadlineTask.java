@@ -1,4 +1,4 @@
-package taskbar.helpers;
+package taskbar;
 
 import java.time.LocalDateTime;
 

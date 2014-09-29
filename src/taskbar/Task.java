@@ -1,4 +1,4 @@
-package taskbar.helpers;
+package taskbar;
 
 public class Task {
 	public Task(String discription, String[] labels, int importance) {
