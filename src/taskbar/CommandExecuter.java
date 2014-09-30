@@ -5,6 +5,9 @@ import java.util.ArrayList;
 /**
  * This class, when used, must be instantiated and stick to a single instance 
  * for a single GUI session.
+ * 
+ * Two methods are provided for GUI component to call, namely, processInput() and selectTask().
+ * The rest of the methods and inner class are all helpers for the above 2 methods.
  * @author suheti
  *
  */
