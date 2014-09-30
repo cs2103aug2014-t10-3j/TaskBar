@@ -15,11 +15,21 @@ public class CommandExecuter {
 	private Display currentDisplay;
 	private SelectionMode selectionMode = SelectionMode.DEFAULT;
 	
+	private StorageManager sm;
+	
 	
 	private boolean isResultLocked = false;
 	
-	public enum SelectionMode{
+	private enum SelectionMode{
 		DEFAULT, DELETE, UPDATE, COMPLETE
+	}
+	
+	private enum CommandType{
+		ADD, DELETE, UPDATE, COMPLETE
+	}
+	
+	public CommandExecuter(){
+		sm = new StrageManager();
 	}
 	
 	public Display runCommand(String command){
@@ -34,14 +44,14 @@ public class CommandExecuter {
 			if(isEndWithEnter(command)){
 				/*TODO: 
 				 * 1: default: instant search result list, lockResult
-				 * 2: moatched keywork: 2.1 addInterpret
+				 * 2: matched keyword: 2.1 addInterpret
 				 * 						2.2 other keyword: action the first of list
 				 */
 				
 			}else{
 				/*TODO:
 				 * 1: default: IS return result list
-				 * 2: mathed keyword: 2.1 no IS, empty display
+				 * 2: matched keyword: 2.1 no IS, empty display
 				 * 					  2.2 other: IS
 				 */
 			}
