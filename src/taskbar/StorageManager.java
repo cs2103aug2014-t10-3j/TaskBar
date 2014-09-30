@@ -31,9 +31,8 @@ public class StorageManager {
 		  		allTasks.set(i,taskB);
 		  		return 1;
 		  	}
-		  	return 0 ; // no such task found to update
 		  }
-		  
+		  return 0 ; // no such task found to update
 		
 		}
 		public ArrayList<String> searchTask(String keyWords){
