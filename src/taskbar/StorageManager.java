@@ -1,3 +1,5 @@
+//Storage manager: deals with all the commands and alters the storage accordingly.
+
 package taskbar;
 import java.util.ArrayList;
 
@@ -6,12 +8,16 @@ public class StorageManager {
 	public class Storage {
 	
 		private static ArrayList<Task> allTasks = new ArrayList<Task>();
+		
+		public StorageManager(){
+		}
 		 	
 		public void addTask(Task taskFromLogic){
 			 
 		allTasks.add(taskFromLogic);	
 						
 		}
+		
 		public int deleteTask(Task taskFromLogic){
 			for(int i = 0 ; i < allTasks.size() ; i++){
 			  if( allTasks.get(i).toString().equals(taskFromLogic.toString())){  // how to check 2 tasks are equal? should have a toString() in Task to check?
