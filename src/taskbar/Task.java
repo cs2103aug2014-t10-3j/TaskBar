@@ -1,9 +1,9 @@
 package taskbar;
 
 public class Task {
-	public Task(String discription, String[] labels, int importance) {
+	public Task(String description, String[] labels, int importance) {
 		super();
-		Discription = discription;
+		Discription = description;
 		this.labels = labels;
 		this.importance = importance;
 	}
@@ -13,11 +13,11 @@ public class Task {
 	private String[] labels;
 	private int importance;
 	
-	public String getDiscription() {
+	public String getDescription() {
 		return Discription;
 	}
-	public void setDiscription(String discription) {
-		Discription = discription;
+	public void setDescription(String description) {
+		Discription = description;
 	}
 	public boolean isDone() {
 		return isDone;

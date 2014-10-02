@@ -39,7 +39,7 @@ public class StorageManager {
 		ArrayList<Task> searchedTasks = new ArrayList<Task>;
 		  
 		  for (int i = 0; i < allTasks.size() ; i++){
-		  		if(allTasks.get(i).getDiscription.contains(keyWord)){
+		  		if(allTasks.get(i).getDescription.contains(keyWord)){
 		   		searchedTasks.add(allTasks.get(i));
 		   }
 		   }
