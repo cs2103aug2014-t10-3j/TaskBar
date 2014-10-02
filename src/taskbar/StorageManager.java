@@ -3,7 +3,6 @@ import java.util.ArrayList;
 
 
 public class StorageManager {
-	public class Storage {
 	
 		private static ArrayList<Task> allTasks = new ArrayList<Task>();
 		 	
@@ -79,6 +78,6 @@ public class StorageManager {
 		}
 		
 		
-	}
+	
 
 }
